@@ -25,8 +25,8 @@ export default class RoomProvider extends Component {
     try {
       let response = await client.getEntries({
         content_type: 'beachResortRoom',
-        order: 'sys.createdAt'
-        //order: '-fields.price'
+        //order: 'sys.createdAt'
+        order: '-fields.price'
         //order: 'fields.price'
       })
 
